@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+<div class="wrapper">
+
+	<script>
+		document.write('<div class="first"> <span>First cycle</span><br>');
+	for (var i = 0; i < 101; ) {
+		document.write(i + '<hr>');
+		i=i+2
+			}
+		document.write('</div>')
+	</script>
+
+	<script>
+		document.write('<div class="sec"> <span>Second cycle</span><br>');
+	for (var x = 200; x >= 0; x--) {
+		document.write(x + '<hr>');
+			}
+		document.write('</div>')
+	</script>
+
+	<script>
+		document.write('<div class="third"> <span>Third cycle</span><br>');
+		var sum = 0;
+	for (var n = 1; n <= 100; n++) {
+			sum += n;
+			}
+		document.write(sum + '<hr>');
+		document.write('</div>')
+	</script>
+
+	<div class="fourth"><span>Pow cycle</span>
+		<form action="input">
+			<input type="text" id="firstNumb"> 
+			<input type="text" id="secondNumb">
+		</form>
+		<button id="pow">Calculate</button>
+		<p>Результат возведения в степень: <span id="rez"></span></p>
+
+		<script>
+		pow.onclick = function(){
+			var a = parseFloat(firstNumb.value);
+			var b = parseFloat(secondNumb.value);
+			
+			if (isNaN(a) || isNaN(b)){
+           		alert("Введите два числа.");
+           		rez.innerHTML = '';
+           	}
+           	else if (a <= 0 || b <= 0){
+           		alert("Недопустимое значение, введите число больше 0");
+           		rez.innerHTML = '';
+           	}
+           	else {
+           		rez.innerHTML = Math.pow(a,b);
+           		}
+
+		}
+	</script>
+	</div>
+
+	<script>
+		document.write('<div class="fifth"> <span>Fifth cycle</span><br>');
+		var q = 1; 
+		var msg = '';
+		while (q < 10) {
+		  msg+= q + ' x 7 = ' + (q * 7) + '<hr>';  
+		  q++;
+		}
+		document.write(msg);
+		document.write('</div>');
+	</script>
+
+	<script>
+		document.write('<div class="six"> <span>Cycle #6 </span><hr>');
+		var summ = 0;
+	for (var w = 1; w <= 50; w++) {
+			summ += w*(w+1);
+			}
+		document.write('Result: ' + '<span>' + summ + '</span>' );
+		document.write('</div>')
+	</script>
+
+	<script>
+		document.write('<div class="seven"> <span>Cycle #7 </span><hr>');
+	for (var e = 1000; e <= 2000; ) {
+		document.write('&#' + e + '<hr>');
+				e++;
+			}
+		document.write('</div>')
+	</script>
+
+</div>
+</body>
+</html>

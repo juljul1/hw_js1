@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.date-control , .minmax, .house, .login, .maxNumb, .first, .sec, .third, 
+.fourth, .fifth, .six, .seven{
+	margin: 10px;
+	padding: 5px;
+	background-color: #dcdcdc;
+	width: 215px;
+}
+.date-control p, .minmax button, .minmax p, .house p, .login p, 
+.login button, .maxNumb p, .maxNumb button, .fourth form, .fourth button{
+	margin-top: 10px;
+}
+span{
+	color: red;
+	font-weight: bold;
+}
+.date-control form, .house form{
+	float: left;
+}
+

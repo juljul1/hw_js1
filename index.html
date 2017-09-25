@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<script async defer src="js/script.js"></script>
+<div class="wrapper">
+	<div class="date-control">
+		<h4>
+			<span>Задание 1</span>
+		</h4><br>
+		<h4>Please input year of your birth</h4><br>
+		<form action="input">
+			<input type="text" placeholder="1999" id="inputDate"> 
+		</form>
+		<button id="calculate">Calculate</button>
+		
+		<p>Your age is: 
+			<span id="userage"></span> 
+		</p> 
+	</div>
+
+	<div class="minmax">
+		<h4>
+			<span>Задание 2</span>
+		</h4><br>
+		<h4>Введите два числа:</h4><br>
+		<form action="input">
+			<input type="text" placeholder="1" id="first"> 
+			<input type="text" placeholder="2" id="second"> 
+		</form>
+		<button id="findMaxNumb">Calculate</button>
+		<p>Bigger number: 
+			<span id="max"></span>
+		</p> 
+	</div>
+	
+	<div class="house">
+		<h4>
+			<span>Задание 3</span>
+		</h4><br>
+		<h4>Введите номер квартиры:</h4><br>
+		<form action="input">
+			<input type="text" placeholder="1" id="entrance"> 
+		</form>
+		<button id="findEntranceNumb">Calculate</button>
+		<p>Ваш подъезд: 
+			<span id="entranceRes"></span>
+		</p> 
+	</div>
+
+	<div class="login">
+		<h4>
+			<span>Задание 4</span>
+		</h4><br>
+		<h4>Login:</h4><br>
+		<form action="input">
+			<input type="text" placeholder="login" id="enterLogin"> 
+			<input type="text" placeholder="pass" id="enterPass"> 
+		</form>
+		<button id="checkLogin">Login</button>
+		<p> 
+			<span id="checkUser"></span>
+		</p> 
+	</div>
+
+	<div class="maxNumb">
+		<h4>
+			<span>Задание 5</span>
+		</h4><br>
+		<h4>Please enter 3 numbers:</h4><br>
+		<form action="input">
+			<input type="text" placeholder="1" id="firstNumb"> 
+			<input type="text" placeholder="2" id="secondNumb"> 
+			<input type="text" placeholder="3" id="thirdNumb"> 
+		</form>
+		<button id="findMaxNumber">Calculate</button>
+		<p> Max number is:
+			<span id="maxNumb"></span>
+		</p> 
+	</div>
+
+	<!-- <div>
+		<span>1 for</span>
+		<p id="odd"></p>
+		<button id="showOdd">Display numbers</button>
+	</div> -->
+</div>
+</body>
+</html>
