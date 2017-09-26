@@ -79,10 +79,10 @@
 
 	<script>
 		document.write('<div class="six"> <span>Cycle #6 </span><hr>');
-		var summ = 0;
-	for (var w = 1; w <= 50; w++) {
-			summ += w*(w+1);
-			}
+		var summ = 1;
+		for (var w = 1; w <= 50; w++) {
+		summ = summ * (w+1);
+		}
 		document.write('Result: ' + '<span>' + summ + '</span>' );
 		document.write('</div>')
 	</script>
